@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarProfit ⭐</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#10111a;color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:35px 15px;background:#191b29}
+h1{color:#ffd45c;font-size:34px}
+header p{color:#bbb}
+main{max-width:650px;margin:auto;padding:22px}
+.card{background:#202333;padding:20px;border-radius:16px;margin:14px 0}
+button{background:#ffcc4d;color:#171717;border:0;border-radius:12px;padding:14px;font-weight:bold;width:100%;font-size:16px}
+h2{font-size:20px}
+.small{color:#aaa;font-size:14px}
+footer{text-align:center;color:#888;padding:30px}
+</style>
+</head>
+<body>
+<header>
+<h1>⭐ StarProfit</h1>
+<p>Магазин цифровых товаров</p>
+</header>
+<main>
+<div class="card">
+<h2>🚀 Добро пожаловать!</h2>
+<p>Покупай цифровые товары быстро, удобно и просто.</p>
+</div>
+<div class="card">
+<h2>🛍️ Наш магазин</h2>
+<p class="small">Каталог товаров скоро откроется.</p>
+<button onclick="alert('Каталог скоро появится!')">Открыть каталог</button>
+</div>
+<div class="card">
+<h2>⭐ Оплата Telegram Stars</h2>
+<p class="small">Оплата будет доступна после подключения платёжной системы.</p>
+</div>
+<div class="card">
+<h2>👤 Личный кабинет</h2>
+<p class="small">Здесь будут отображаться твои покупки.</p>
+</div>
+</main>
+<footer>© StarProfit 2026</footer>
+</body>
+</html>
