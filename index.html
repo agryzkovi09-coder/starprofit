@@ -3,20 +3,22 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>StarProfit ⭐</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#10111a;color:white;font-family:Arial,sans-serif}
-header{text-align:center;padding:35px 15px;background:#191b29}
-h1{color:#ffd45c;font-size:34px}
+header{text-align:center;padding:28px 15px;background:#191b29}
+h1{color:#ffd45c;font-size:32px}
 header p{color:#bbb}
-main{max-width:650px;margin:auto;padding:22px}
+main{max-width:650px;margin:auto;padding:18px}
 .card{background:#202333;padding:20px;border-radius:16px;margin:14px 0}
-button{background:#ffcc4d;color:#171717;border:0;border-radius:12px;padding:14px;font-weight:bold;width:100%;font-size:16px}
+.product{border:1px solid #41445a}
+.price{color:#ffd45c;font-weight:bold}
+button{background:#ffcc4d;color:#171717;border:0;border-radius:12px;padding:13px;font-weight:bold;width:100%;font-size:16px;cursor:pointer}
 h2{font-size:20px}
 .small{color:#aaa;font-size:14px}
-footer{text-align:center;color:#888;padding:30px}
+footer{text-align:center;color:#888;padding:25px}
 </style>
 </head>
 <body>
@@ -27,22 +29,53 @@ footer{text-align:center;color:#888;padding:30px}
 <main>
 <div class="card">
 <h2>🚀 Добро пожаловать!</h2>
-<p>Покупай цифровые товары быстро, удобно и просто.</p>
+<p>Выбирай товары и пробуй наш магазин.</p>
+<p class="small">🧪 ТЕСТОВЫЙ РЕЖИМ — оплата отключена</p>
 </div>
-<div class="card">
-<h2>🛍️ Наш магазин</h2>
-<p class="small">Каталог товаров скоро откроется.</p>
-<button onclick="alert('Каталог скоро появится!')">Открыть каталог</button>
+
+<h2>🛍️ Каталог товаров</h2>
+
+<div class="card product">
+<h2>⭐ Telegram Stars</h2>
+<p>Демонстрационный товар</p>
+<p class="price">15 Stars</p>
+<button onclick="buy('Telegram Stars')">Купить</button>
 </div>
-<div class="card">
-<h2>⭐ Оплата Telegram Stars</h2>
-<p class="small">Оплата будет доступна после подключения платёжной системы.</p>
+
+<div class="card product">
+<h2>🎮 Игровой бонус</h2>
+<p>Тестовый игровой товар</p>
+<p class="price">20 Stars</p>
+<button onclick="buy('Игровой бонус')">Купить</button>
 </div>
+
+<div class="card product">
+<h2>📱 Цифровая подписка</h2>
+<p>Демонстрационная подписка</p>
+<p class="price">25 Stars</p>
+<button onclick="buy('Цифровая подписка')">Купить</button>
+</div>
+
+<div class="card product">
+<h2>🔑 Цифровой ключ</h2>
+<p>Тестовый ключ активации</p>
+<p class="price">10 Stars</p>
+<button onclick="buy('Цифровой ключ')">Купить</button>
+</div>
+
 <div class="card">
-<h2>👤 Личный кабинет</h2>
-<p class="small">Здесь будут отображаться твои покупки.</p>
+<h2>💬 Поддержка</h2>
+<p>Есть вопросы? Обратись к нам!</p>
+<button onclick="window.open('https://t.me/StarProfitMoneyBot','_blank')">Открыть Telegram</button>
 </div>
 </main>
-<footer>© StarProfit 2026</footer>
+<footer>⭐ StarProfit © 2026</footer>
+
+<script>
+function buy(product){
+alert('🧪 ТЕСТОВАЯ ПОКУПКА\n\nТовар: '+product+
+'\n\nПокупка проверена успешно!\nTelegram Stars не списаны.');
+}
+</script>
 </body>
 </html>
